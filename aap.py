@@ -1,23 +1,6 @@
-📌 PROJECT TITLE
 
-E-Commerce Customer Behavior Analysis and Sales Prediction System Using Python
-
-📄 PROJECT DESCRIPTION
-
-This project focuses on analyzing customer behavior in an e-commerce environment and predicting purchasing patterns using data science techniques. The system simulates real-world online shopping data such as customer activity, product pricing, purchase quantity, and transaction details.
-
-The project integrates multiple data science concepts including data preprocessing, statistical analysis, machine learning, and visualization. Correlation analysis is used to identify relationships between customer activity and product categories. Logistic regression is applied to predict whether a customer will make a purchase, while linear regression is used to forecast sales trends over time.
-
-Statistical testing such as the Z-test is used to validate assumptions about customer spending behavior. NumPy operations are utilized for efficient numerical computations, and data cleaning techniques are applied to handle missing values.
-
-Additionally, the project performs financial analysis such as revenue calculation and risk estimation, along with customer segmentation and performance evaluation. Various visualizations like heatmaps, line graphs, and scatter plots are used to represent insights clearly.
-
-Overall, this project demonstrates how data science techniques can be applied in e-commerce platforms to improve decision-making, understand customer behavior, and enhance business performance.
-
-💻 FULL PROGRAM (ALL 10 CONCEPTS – SHOPPING THEME)
-# =========================================
 # E-COMMERCE DATA SCIENCE PROJECT
-# =========================================
+
 
 import numpy as np
 import pandas as pd
@@ -31,9 +14,6 @@ from scipy.stats import norm
 
 np.random.seed(42)
 
-# =========================================
-# EXP 1 - CUSTOMER BEHAVIOR CORRELATION
-# =========================================
 print("\nEXP 1: Customer Behavior Correlation")
 
 data = np.random.randint(1, 100, (50, 5))
@@ -48,9 +28,6 @@ plt.yticks(range(5), features)
 plt.title("Customer Behavior Heatmap")
 plt.show()
 
-# =========================================
-# EXP 2 - PURCHASE PREDICTION (LOGISTIC)
-# =========================================
 print("\nEXP 2: Purchase Prediction")
 
 df = pd.DataFrame(np.random.rand(200, 5))
@@ -71,9 +48,6 @@ model.fit(X_train, y_train)
 pred = model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, pred))
 
-# =========================================
-# EXP 3 - SALES TREND (LINEAR)
-# =========================================
 print("\nEXP 3: Sales Prediction")
 
 days = np.arange(1, 31)
@@ -87,9 +61,6 @@ plt.plot(days, model.predict(days.reshape(-1,1)))
 plt.title("Sales Trend")
 plt.show()
 
-# =========================================
-# EXP 4 - CUSTOMER SAMPLING
-# =========================================
 print("\nEXP 4: Customer Sampling")
 
 df = pd.DataFrame({
@@ -99,9 +70,6 @@ df = pd.DataFrame({
 
 print(df.sample(frac=0.25))
 
-# =========================================
-# EXP 5 - Z TEST ON SPENDING
-# =========================================
 print("\nEXP 5: Z-Test on Spending")
 
 spending = np.random.normal(500, 50, 40)
@@ -110,18 +78,12 @@ z = (np.mean(spending) - 450) / (np.std(spending)/np.sqrt(40))
 print("Z-score:", z)
 print("Decision:", "Reject H0" if z > norm.ppf(0.95) else "Accept H0")
 
-# =========================================
-# EXP 6 - SALES NUMPY OPERATIONS
-# =========================================
 print("\nEXP 6: Sales Operations")
 
 sales = np.random.randint(1000, 5000, 12)
 print("Mean:", np.mean(sales))
 print("Sum:", np.sum(sales))
 
-# =========================================
-# EXP 7 - DATA CLEANING
-# =========================================
 print("\nEXP 7: Cleaning Data")
 
 data = np.array([[100,200,np.nan],[300,400,500]])
@@ -129,17 +91,11 @@ data[np.isnan(data)] = np.nanmean(data)
 
 print(data)
 
-# =========================================
-# EXP 8 - FINANCIAL ANALYSIS
-# =========================================
 print("\nEXP 8: Financial Analysis")
 
 returns = np.random.normal(0.002, 0.01, (100, 3))
 print("Mean Returns:", returns.mean(axis=0))
 
-# =========================================
-# EXP 9 - CUSTOMER PERFORMANCE
-# =========================================
 print("\nEXP 9: Customer Analysis")
 
 data = np.random.randint(1,100,(10,5))
@@ -148,10 +104,6 @@ print("Avg:", data.mean(axis=0))
 plt.imshow(np.corrcoef(data, rowvar=False))
 plt.colorbar()
 plt.show()
-
-# =========================================
-# EXP 10 - REVENUE ANALYSIS
-# =========================================
 print("\nEXP 10: Revenue Analysis")
 
 df = pd.DataFrame({
