@@ -2,80 +2,53 @@
 📌 Project Overview
 
 This project analyzes customer behavior in an e-commerce system using Python.
-It helps to understand how customers interact with products and predicts future sales and purchase patterns.
+It helps to understand customer activity, product trends, and predicts future sales.
 
 ⚙️ Technologies Used
-
 Python 🐍
 Pandas
 NumPy
 Matplotlib
 Scikit-learn
-
 📂 Dataset
 
-The dataset simulates real-world e-commerce data.
+Sample dataset simulating real-world e-commerce data.
 
-Columns include:
+Columns:
+
 Customer_ID
 Product_Category
 Product_Price
 Quantity
 Purchase_Status
 Date
-
-🔍 Features & Analysis
+🔍 Features
 ✅ Data Preprocessing
-Handles missing values
-Cleans and formats data
-Converts date into proper format
+Handling missing values
+Data cleaning
+Date formatting
 ✅ Revenue Calculation
 
-Revenue is calculated using:
+Formula:
+
 Revenue = Quantity × Product Price
-
 ✅ Customer Behavior Analysis
-Analyzes customer activity
-Identifies popular product categories
-Studies purchasing patterns
+Identify buying patterns
+Analyze popular categories
 ✅ Correlation Analysis
-
-Finds relationship between:
-
-Product Price
-Quantity
-Revenue
+Relationship between price, quantity, and revenue
 ✅ Sales Prediction
-
-📌 Logistic Regression
-
-Predicts whether a customer will make a purchase
-
-📌 Linear Regression
-
-Predicts future sales trends
-✅ Statistical Testing
-Uses Z-test to analyze customer spending behavior
-Validates assumptions using statistics
+Logistic Regression → Predict purchase (Yes/No)
+Linear Regression → Predict future sales
+✅ Statistical Analysis
+Z-test for customer spending behavior
 ✅ Customer Segmentation
-Groups customers based on behavior
-Helps in targeted marketing
+Group customers based on activity
 📊 Visualizations
-
-The project generates the following charts:
-
-📌 1. Bar Chart – Category Sales
-Shows revenue for each product category
-
-📌 2. Line Chart – Sales Trend
-Displays sales over time
-
-📌 3. Scatter Plot – Price vs Quantity
-Shows relationship between price and purchase
-
-📌 4. Heatmap – Correlation Matrix
-Shows relationships between variables
-
+Bar Chart → Category Sales
+Line Chart → Sales Trend
+Scatter Plot → Price vs Quantity
+Heatmap → Correlation Matrix
 ▶️ How to Run
 1. Install Dependencies
 pip install pandas numpy matplotlib scikit-learn
@@ -84,12 +57,12 @@ df = pd.read_csv("your_file_path.csv")
 3. Run the Script
 python your_script_name.py
 📈 Output
-Customer behavior insights
-Sales prediction results
-Product performance analysis
-Visual charts for understanding data
+Sales trends
+Customer insights
+Prediction results
+Visual charts
 🚀 Future Enhancements
-Add interactive dashboard (Streamlit / Plotly)
-Build web application (Flask)
+Interactive dashboard (Streamlit / Plotly)
+Web app using Flask
 Real-time data integration
-Advanced AI-based recommendation system
+AI-based recommendation system
