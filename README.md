@@ -76,7 +76,7 @@ pip install pandas numpy matplotlib scikit-learn
 ### 2. Update File Path
 
 ```
-df = pd.read_csv("your_file_path.csv")
+df = pd.read_csv("C:\Users\SUSMITHA G\Downloads\e-commerce.csv")
 ```
 
 ### 3. Run the Script
